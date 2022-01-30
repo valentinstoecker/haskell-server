@@ -1,7 +1,7 @@
 services:
-  TestServer:
+  testserver:
     build:
-      context: TestServer
+      context: testserver
       target: development
     secrets:
       - db-password
@@ -29,7 +29,7 @@ services:
     ports:
       - 8080:80
     depends_on:
-      - TestServer
+      - testserver
 volumes:
   db-data:
 secrets:
