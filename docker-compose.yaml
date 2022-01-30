@@ -1,6 +1,6 @@
 services:
   backend:
-    build: backend
+    build: TestServer
     secrets:
       - db-password
     depends_on:
