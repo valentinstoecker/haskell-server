@@ -1,5 +1,5 @@
 services:
-  backend:
+  TestServer:
     build: TestServer
     secrets:
       - db-password
@@ -22,7 +22,7 @@ services:
     ports:
       - 80:80
     depends_on:
-      - backend
+      - TestServer
 volumes:
   db-data:
 secrets:
