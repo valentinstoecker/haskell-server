@@ -1,6 +1,6 @@
 services:
-  TestServer:
-    build: TestServer
+  testserver:
+    build: testserver
     secrets:
       - db-password
     depends_on:
@@ -22,7 +22,7 @@ services:
     ports:
       - 80:80
     depends_on:
-      - TestServer
+      - testserver
 volumes:
   db-data:
 secrets:

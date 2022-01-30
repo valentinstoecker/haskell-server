@@ -1,3 +1,3 @@
-# Changelog for TestServer
+# Changelog for testserver
 
 ## Unreleased changes
