@@ -72,4 +72,4 @@ RUN hoogle generate && stack hoogle
 
 ENV DEBIAN_FRONTEND=dialog
 
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["stack run"]
