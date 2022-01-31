@@ -3,7 +3,6 @@ services:
   testserver:
     build:
       context: testserver
-      target: development
     secrets:
       - db-password
     depends_on:
